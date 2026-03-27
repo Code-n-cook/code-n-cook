@@ -1502,7 +1502,7 @@
         <div class="contact-icon">✉️</div>
         <div class="contact-text">
           <div class="label">Email</div>
-          <div class="value" style="font-size:13px;letter-spacing:0.3px;">codencook.in@gmail.com</div>
+          <div class="value" style="font-size:13px;letter-spacing:0.3px;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c4a7aba0a1aaa7ababafeaadaa84a3a9a5ada8eaa7aba9">[email&#160;protected]</a></div>
         </div>
       </div>
     </div>
@@ -1589,7 +1589,7 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── CART STATE ──
 const cart = {};
 const menuData = {
@@ -1796,7 +1796,7 @@ const ctx = canvas.getContext('2d');
 
 function resize() {
   canvas.width = window.innerWidth;
-  canvas.height = document.body.scrollHeight;
+  canvas.height = window.innerHeight;
 }
 resize();
 window.addEventListener('resize', resize);
@@ -1809,8 +1809,8 @@ class Sparkle {
   reset() {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
-    this.size = Math.random() * 2.5 + 0.5;
-    this.alpha = Math.random() * 0.6 + 0.1;
+    this.size = Math.random() * 3 + 0.8;
+    this.alpha = Math.random() * 0.8 + 0.2;
     this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
     this.speed = Math.random() * 0.4 + 0.1;
     this.drift = (Math.random() - 0.5) * 0.3;
@@ -1852,7 +1852,7 @@ class Sparkle {
     ctx.globalAlpha = this.alpha;
     ctx.fillStyle = this.color;
     ctx.shadowColor = this.color;
-    ctx.shadowBlur = 6;
+    ctx.shadowBlur = 10;
     if (this.type === 'star') {
       this.drawStar(this.x, this.y, this.size * 2, 4, ctx);
       ctx.fill();
@@ -1865,7 +1865,7 @@ class Sparkle {
   }
 }
 
-for (let i = 0; i < 200; i++) particles.push(new Sparkle());
+for (let i = 0; i < 350; i++) particles.push(new Sparkle());
 
 function animateSparkles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -1876,12 +1876,4 @@ animateSparkles();
 
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.menu-card, .gallery-card, .a
+  entries.forEa
