@@ -18,18 +18,18 @@
     --veg-green: #2ECC40;
     --radius: 12px;
   }
- 
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     background: var(--black);
     color: var(--white);
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
   }
- 
+
   /* ── SPARKLE CANVAS ── */
   #sparkle-canvas {
     position: fixed;
@@ -38,7 +38,7 @@
     pointer-events: none;
     z-index: 0;
   }
- 
+
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -52,7 +52,7 @@
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(255,215,0,0.12);
   }
- 
+
   .nav-logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 26px;
@@ -60,13 +60,13 @@
     color: var(--gold);
     text-decoration: none;
   }
- 
+
   .nav-links {
     display: flex;
     gap: 36px;
     list-style: none;
   }
- 
+
   .nav-links a {
     color: var(--white-muted);
     text-decoration: none;
@@ -76,9 +76,9 @@
     text-transform: uppercase;
     transition: color 0.3s;
   }
- 
+
   .nav-links a:hover { color: var(--gold); }
- 
+
   /* ── HERO ── */
   #hero {
     position: relative;
@@ -92,7 +92,7 @@
     overflow: hidden;
     z-index: 1;
   }
- 
+
   .hero-bg-circle {
     position: absolute;
     width: 700px;
@@ -103,18 +103,18 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
- 
+
   .logo-wrap {
     position: relative;
     margin-bottom: 32px;
     animation: floatLogo 4s ease-in-out infinite;
   }
- 
+
   @keyframes floatLogo {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
   }
- 
+
   .logo-ring {
     width: 170px;
     height: 170px;
@@ -127,12 +127,12 @@
     position: relative;
     box-shadow: 0 0 40px rgba(255,215,0,0.25), 0 0 80px rgba(255,215,0,0.1);
   }
- 
+
   .logo-inner {
     text-align: center;
     padding: 10px;
   }
- 
+
   .logo-top {
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
@@ -141,7 +141,7 @@
     font-weight: 600;
     margin-bottom: 2px;
   }
- 
+
   .logo-main {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28px;
@@ -149,7 +149,7 @@
     color: var(--gold);
     letter-spacing: 2px;
   }
- 
+
   .logo-sub {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 16px;
@@ -157,7 +157,7 @@
     letter-spacing: 1px;
     margin-top: 2px;
   }
- 
+
   .logo-bottom {
     font-size: 8px;
     letter-spacing: 1.5px;
@@ -165,7 +165,7 @@
     margin-top: 4px;
     font-weight: 500;
   }
- 
+
   .hero-brand {
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@
     animation: fadeUp 0.9s ease both;
     animation-delay: 0.2s;
   }
- 
+
   .hero-brand h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(52px, 8vw, 96px);
@@ -185,7 +185,7 @@
     background-clip: text;
     line-height: 1;
   }
- 
+
   .veg-badge {
     display: inline-flex;
     align-items: center;
@@ -197,14 +197,14 @@
     flex-shrink: 0;
     margin-top: 4px;
   }
- 
+
   .veg-badge .dot {
     width: 12px;
     height: 12px;
     background: var(--veg-green);
     border-radius: 50%;
   }
- 
+
   .hero-tagline {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(20px, 3vw, 32px);
@@ -216,9 +216,9 @@
     animation: fadeUp 0.9s ease both;
     animation-delay: 0.35s;
   }
- 
+
   .hero-tagline span { color: var(--gold); }
- 
+
   .hero-sub {
     font-size: 16px;
     color: rgba(255,255,255,0.5);
@@ -228,7 +228,7 @@
     animation: fadeUp 0.9s ease both;
     animation-delay: 0.5s;
   }
- 
+
   .hero-cta {
     animation: fadeUp 0.9s ease both;
     animation-delay: 0.65s;
@@ -237,7 +237,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
- 
+
   .btn-gold {
     display: inline-block;
     padding: 16px 40px;
@@ -256,7 +256,7 @@
     position: relative;
     overflow: hidden;
   }
- 
+
   .btn-gold::before {
     content: '';
     position: absolute;
@@ -266,10 +266,10 @@
     transform: skewX(-20deg);
     transition: left 0.5s;
   }
- 
+
   .btn-gold:hover::before { left: 125%; }
   .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,215,0,0.35); }
- 
+
   .btn-outline {
     display: inline-block;
     padding: 15px 40px;
@@ -286,13 +286,13 @@
     background: transparent;
     transition: background 0.3s, border-color 0.3s, transform 0.2s;
   }
- 
+
   .btn-outline:hover {
     background: rgba(255,215,0,0.08);
     border-color: var(--gold);
     transform: translateY(-2px);
   }
- 
+
   .scroll-hint {
     position: absolute;
     bottom: 32px;
@@ -304,26 +304,26 @@
     gap: 6px;
     animation: bounceDown 2s ease infinite;
   }
- 
+
   .scroll-hint span {
     font-size: 10px;
     letter-spacing: 2px;
     color: rgba(255,215,0,0.4);
     text-transform: uppercase;
   }
- 
+
   .scroll-hint svg { opacity: 0.4; }
- 
+
   @keyframes bounceDown {
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(8px); }
   }
- 
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
   }
- 
+
   /* ── DIVIDER ── */
   .gold-divider {
     width: 60px;
@@ -331,14 +331,14 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     margin: 0 auto 20px;
   }
- 
+
   /* ── SECTION BASE ── */
   section {
     position: relative;
     z-index: 1;
     padding: 96px 24px;
   }
- 
+
   .section-label {
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
@@ -348,7 +348,7 @@
     text-align: center;
     margin-bottom: 12px;
   }
- 
+
   .section-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(38px, 5vw, 60px);
@@ -358,20 +358,20 @@
     margin-bottom: 16px;
     line-height: 1;
   }
- 
+
   .section-title span { color: var(--gold); }
- 
+
   /* ── ABOUT ── */
   #about {
     background: var(--black-soft);
   }
- 
+
   .about-inner {
     max-width: 760px;
     margin: 0 auto;
     text-align: center;
   }
- 
+
   .about-story {
     font-size: 22px;
     line-height: 1.8;
@@ -380,13 +380,13 @@
     margin-top: 32px;
     font-style: italic;
   }
- 
+
   .about-story strong {
     color: var(--gold);
     font-style: normal;
     font-weight: 600;
   }
- 
+
   .about-tags {
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +394,7 @@
     justify-content: center;
     margin-top: 36px;
   }
- 
+
   .tag {
     padding: 7px 18px;
     border: 1px solid rgba(255,215,0,0.25);
@@ -406,10 +406,10 @@
     text-transform: uppercase;
     background: rgba(255,215,0,0.04);
   }
- 
+
   /* ── MENU ── */
   #menu { background: var(--black); }
- 
+
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -417,7 +417,7 @@
     max-width: 780px;
     margin: 48px auto 0;
   }
- 
+
   .menu-card {
     background: var(--black-card);
     border: 1px solid rgba(255,215,0,0.12);
@@ -427,7 +427,7 @@
     overflow: hidden;
     transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   }
- 
+
   .menu-card::before {
     content: '';
     position: absolute;
@@ -437,28 +437,28 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
- 
+
   .menu-card:hover {
     transform: translateY(-6px);
     border-color: rgba(255,215,0,0.4);
     box-shadow: 0 20px 60px rgba(255,215,0,0.1);
   }
- 
+
   .menu-card:hover::before { opacity: 1; }
- 
+
   .menu-emoji {
     font-size: 48px;
     margin-bottom: 16px;
     display: block;
   }
- 
+
   .menu-top {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
   }
- 
+
   .menu-name {
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
@@ -466,7 +466,7 @@
     letter-spacing: 1px;
     color: var(--white);
   }
- 
+
   .veg-sm {
     display: inline-flex;
     align-items: center;
@@ -477,28 +477,28 @@
     border-radius: 3px;
     flex-shrink: 0;
   }
- 
+
   .veg-sm .dot {
     width: 8px;
     height: 8px;
     background: var(--veg-green);
     border-radius: 50%;
   }
- 
+
   .menu-desc {
     font-size: 13px;
     color: rgba(255,255,255,0.45);
     margin-bottom: 20px;
     line-height: 1.6;
   }
- 
+
   .menu-price {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
     color: var(--gold);
     letter-spacing: 2px;
   }
- 
+
   .menu-badge {
     position: absolute;
     top: 16px;
@@ -513,10 +513,10 @@
     text-transform: uppercase;
     font-weight: 600;
   }
- 
+
   /* ── GALLERY ── */
   #gallery { background: var(--black-soft); }
- 
+
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -524,7 +524,7 @@
     max-width: 900px;
     margin: 48px auto 0;
   }
- 
+
   .gallery-card {
     border-radius: var(--radius);
     overflow: hidden;
@@ -532,7 +532,7 @@
     position: relative;
     group: true;
   }
- 
+
   .gallery-img {
     width: 100%;
     aspect-ratio: 4/3;
@@ -540,9 +540,9 @@
     display: block;
     transition: transform 0.5s;
   }
- 
+
   .gallery-card:hover .gallery-img { transform: scale(1.05); }
- 
+
   .gallery-overlay {
     position: absolute;
     inset: 0;
@@ -553,9 +553,9 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
- 
+
   .gallery-card:hover .gallery-overlay { opacity: 1; }
- 
+
   .gallery-label {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -563,7 +563,7 @@
     color: var(--gold);
     font-weight: 600;
   }
- 
+
   /* Placeholder gallery images using CSS art */
   .gallery-placeholder {
     width: 100%;
@@ -576,21 +576,21 @@
     position: relative;
     overflow: hidden;
   }
- 
+
   .gallery-placeholder.maggi {
     background: linear-gradient(135deg, #1a1000 0%, #2d1c00 50%, #1a1000 100%);
   }
- 
+
   .gallery-placeholder.coffee {
     background: linear-gradient(135deg, #0a0a1a 0%, #1a1030 50%, #0a0a1a 100%);
   }
- 
+
   .gallery-placeholder .food-icon {
     font-size: 80px;
     margin-bottom: 8px;
     filter: drop-shadow(0 4px 20px rgba(255,215,0,0.4));
   }
- 
+
   .gallery-placeholder .food-text {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -599,7 +599,7 @@
     text-transform: uppercase;
     opacity: 0.7;
   }
- 
+
   .steam {
     position: absolute;
     top: 10px;
@@ -608,7 +608,7 @@
     display: flex;
     gap: 10px;
   }
- 
+
   .steam-line {
     width: 3px;
     height: 30px;
@@ -616,18 +616,18 @@
     border-radius: 10px;
     animation: steamRise 2s ease-in-out infinite;
   }
- 
+
   .steam-line:nth-child(2) { animation-delay: 0.4s; height: 20px; }
   .steam-line:nth-child(3) { animation-delay: 0.8s; }
- 
+
   @keyframes steamRise {
     0% { transform: translateY(0) scaleX(1); opacity: 0.4; }
     100% { transform: translateY(-30px) scaleX(1.5); opacity: 0; }
   }
- 
+
   /* ── CONTACT ── */
   #contact { background: var(--black); }
- 
+
   .contact-card {
     max-width: 540px;
     margin: 48px auto 0;
@@ -639,7 +639,7 @@
     position: relative;
     overflow: hidden;
   }
- 
+
   .contact-card::after {
     content: '';
     position: absolute;
@@ -647,7 +647,7 @@
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
   }
- 
+
   .contact-avatar {
     width: 80px;
     height: 80px;
@@ -662,7 +662,7 @@
     margin: 0 auto 20px;
     box-shadow: 0 0 30px rgba(255,215,0,0.3);
   }
- 
+
   .contact-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
@@ -670,7 +670,7 @@
     color: var(--gold);
     margin-bottom: 4px;
   }
- 
+
   .contact-role {
     font-size: 12px;
     letter-spacing: 2px;
@@ -678,14 +678,14 @@
     text-transform: uppercase;
     margin-bottom: 32px;
   }
- 
+
   .contact-info {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-bottom: 32px;
   }
- 
+
   .contact-row {
     display: flex;
     align-items: center;
@@ -695,7 +695,7 @@
     border: 1px solid rgba(255,215,0,0.1);
     border-radius: 10px;
   }
- 
+
   .contact-icon {
     width: 36px;
     height: 36px;
@@ -707,11 +707,11 @@
     font-size: 16px;
     flex-shrink: 0;
   }
- 
+
   .contact-text {
     text-align: left;
   }
- 
+
   .contact-text .label {
     font-size: 10px;
     letter-spacing: 1.5px;
@@ -719,20 +719,20 @@
     text-transform: uppercase;
     margin-bottom: 2px;
   }
- 
+
   .contact-text .value {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     color: var(--white);
     font-weight: 500;
   }
- 
+
   .contact-text .value.coming-soon {
     color: rgba(255,255,255,0.35);
     font-size: 14px;
     font-style: italic;
   }
- 
+
   /* ── FOOTER ── */
   footer {
     background: var(--black-soft);
@@ -742,7 +742,7 @@
     position: relative;
     z-index: 1;
   }
- 
+
   .footer-brand {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
@@ -750,7 +750,7 @@
     color: var(--gold);
     margin-bottom: 8px;
   }
- 
+
   .footer-tagline {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -762,19 +762,19 @@
     gap: 8px;
     justify-content: center;
   }
- 
+
   .footer-copyright {
     font-size: 11px;
     color: rgba(255,255,255,0.2);
     margin-top: 16px;
     letter-spacing: 1px;
   }
- 
+
   /* ── GOLD SHIMMER BORDER ── */
   .shimmer-border {
     position: relative;
   }
- 
+
   .shimmer-border::before {
     content: '';
     position: absolute;
@@ -786,12 +786,12 @@
     z-index: -1;
     opacity: 0.6;
   }
- 
+
   @keyframes shimmerBorder {
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
   }
- 
+
   /* ── 100% VEG BANNER ── */
   .veg-banner {
     background: linear-gradient(90deg, rgba(46,204,64,0.08), rgba(46,204,64,0.15), rgba(46,204,64,0.08));
@@ -807,7 +807,7 @@
     font-weight: 500;
     letter-spacing: 1px;
   }
- 
+
   /* ── MOBILE ── */
   @media (max-width: 600px) {
     nav { padding: 16px 20px; }
@@ -816,7 +816,7 @@
     .contact-card { padding: 32px 20px; }
     .menu-grid { grid-template-columns: 1fr; }
   }
- 
+
   /* ── GOLDEN PARTICLES ── */
   .particle-wrap {
     position: absolute;
@@ -824,7 +824,7 @@
     pointer-events: none;
     overflow: hidden;
   }
- 
+
   /* ── ORDER BUTTON ON MENU CARDS ── */
   .menu-card-footer {
     display: flex;
@@ -832,7 +832,7 @@
     justify-content: space-between;
     margin-top: 20px;
   }
- 
+
   .btn-add {
     display: inline-flex;
     align-items: center;
@@ -850,9 +850,9 @@
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
   }
- 
+
   .btn-add:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(255,215,0,0.3); }
- 
+
   .qty-control {
     display: none;
     align-items: center;
@@ -862,9 +862,9 @@
     border-radius: 8px;
     padding: 6px 12px;
   }
- 
+
   .qty-control.active { display: flex; }
- 
+
   .qty-btn {
     width: 28px; height: 28px;
     border-radius: 50%;
@@ -877,9 +877,9 @@
     line-height: 1;
     transition: background 0.2s;
   }
- 
+
   .qty-btn:hover { background: rgba(255,215,0,0.15); }
- 
+
   .qty-num {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -887,7 +887,7 @@
     min-width: 20px;
     text-align: center;
   }
- 
+
   /* ── FLOATING CART ── */
   #cart-fab {
     position: fixed;
@@ -913,15 +913,15 @@
     pointer-events: none;
     transform: translateY(20px);
   }
- 
+
   #cart-fab.visible {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
   }
- 
+
   #cart-fab:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 12px 40px rgba(255,215,0,0.5); }
- 
+
   #cart-count {
     background: var(--black);
     color: var(--gold);
@@ -931,7 +931,7 @@
     display: flex; align-items: center; justify-content: center;
     font-weight: 700;
   }
- 
+
   /* ── WHATSAPP FLOAT ── */
   #wa-float {
     position: fixed;
@@ -958,17 +958,17 @@
     transform: translateY(20px);
     transition: opacity 0.4s, transform 0.4s, box-shadow 0.2s;
   }
- 
+
   #wa-float.visible {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
   }
- 
+
   #wa-float:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37,211,102,0.5); }
- 
+
   #wa-float svg { width: 22px; height: 22px; fill: white; }
- 
+
   /* ── ORDER MODAL ── */
   #order-modal {
     display: none;
@@ -981,9 +981,9 @@
     justify-content: center;
     padding: 20px;
   }
- 
+
   #order-modal.open { display: flex; }
- 
+
   .modal-box {
     background: var(--black-card);
     border: 1px solid rgba(255,215,0,0.2);
@@ -995,12 +995,12 @@
     position: relative;
     animation: modalIn 0.3s ease;
   }
- 
+
   @keyframes modalIn {
     from { opacity: 0; transform: scale(0.94) translateY(20px); }
     to { opacity: 1; transform: scale(1) translateY(0); }
   }
- 
+
   .modal-header {
     padding: 24px 28px 16px;
     border-bottom: 1px solid rgba(255,215,0,0.1);
@@ -1008,14 +1008,14 @@
     align-items: center;
     justify-content: space-between;
   }
- 
+
   .modal-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28px;
     letter-spacing: 3px;
     color: var(--gold);
   }
- 
+
   .modal-close {
     width: 34px; height: 34px;
     border-radius: 50%;
@@ -1027,11 +1027,11 @@
     display: flex; align-items: center; justify-content: center;
     transition: background 0.2s;
   }
- 
+
   .modal-close:hover { background: rgba(255,255,255,0.08); }
- 
+
   .modal-body { padding: 20px 28px; }
- 
+
   .cart-item {
     display: flex;
     align-items: center;
@@ -1039,30 +1039,30 @@
     padding: 14px 0;
     border-bottom: 1px solid rgba(255,255,255,0.06);
   }
- 
+
   .cart-item-left { display: flex; align-items: center; gap: 12px; }
- 
+
   .cart-item-emoji { font-size: 28px; }
- 
+
   .cart-item-name {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     color: var(--white);
     font-weight: 500;
   }
- 
+
   .cart-item-price {
     font-size: 13px;
     color: rgba(255,215,0,0.6);
     margin-top: 2px;
   }
- 
+
   .cart-item-right {
     display: flex;
     align-items: center;
     gap: 14px;
   }
- 
+
   .cart-item-total {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 22px;
@@ -1070,7 +1070,7 @@
     min-width: 60px;
     text-align: right;
   }
- 
+
   .cart-remove {
     background: rgba(255,60,60,0.1);
     border: 1px solid rgba(255,60,60,0.2);
@@ -1082,18 +1082,18 @@
     display: flex; align-items: center; justify-content: center;
     transition: background 0.2s;
   }
- 
+
   .cart-remove:hover { background: rgba(255,60,60,0.25); }
- 
+
   .cart-empty {
     text-align: center;
     padding: 40px 0;
     color: rgba(255,255,255,0.3);
     font-size: 15px;
   }
- 
+
   .cart-empty .empty-icon { font-size: 48px; margin-bottom: 12px; }
- 
+
   .order-total-row {
     display: flex;
     justify-content: space-between;
@@ -1101,7 +1101,7 @@
     padding: 16px 0 4px;
     margin-top: 4px;
   }
- 
+
   .order-total-label {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -1109,17 +1109,17 @@
     color: rgba(255,255,255,0.5);
     text-transform: uppercase;
   }
- 
+
   .order-total-amt {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
     color: var(--gold);
     letter-spacing: 2px;
   }
- 
+
   /* Customer Form */
   .order-form { margin-top: 20px; }
- 
+
   .form-section-label {
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
@@ -1128,9 +1128,9 @@
     text-transform: uppercase;
     margin-bottom: 12px;
   }
- 
+
   .form-group { margin-bottom: 14px; }
- 
+
   .form-group label {
     display: block;
     font-size: 11px;
@@ -1139,7 +1139,7 @@
     text-transform: uppercase;
     margin-bottom: 6px;
   }
- 
+
   .form-group input, .form-group textarea, .form-group select {
     width: 100%;
     background: rgba(255,255,255,0.04);
@@ -1153,20 +1153,20 @@
     transition: border-color 0.2s;
     resize: none;
   }
- 
+
   .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
     border-color: rgba(255,215,0,0.5);
   }
- 
+
   .form-group select option { background: #1a1a1a; }
- 
+
   .modal-footer {
     padding: 20px 28px 28px;
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
- 
+
   .btn-whatsapp-order {
     display: flex;
     align-items: center;
@@ -1186,11 +1186,42 @@
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
   }
- 
+
   .btn-whatsapp-order:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,211,102,0.4); }
- 
+
   .btn-whatsapp-order svg { width: 22px; height: 22px; fill: white; }
- 
+
+
+  /* ── TOKEN ID ── */
+  .token-box {
+    background: rgba(255,215,0,0.08);
+    border: 2px dashed #FFD700;
+    border-radius: 14px;
+    padding: 18px 24px;
+    margin: 16px 0 20px;
+  }
+  .token-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,215,0,0.6);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .token-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    color: #FFD700;
+    letter-spacing: 8px;
+    line-height: 1;
+  }
+  .token-hint {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
   /* ── ORDER SUCCESS ── */
   #success-modal {
     display: none;
@@ -1202,9 +1233,9 @@
     justify-content: center;
     padding: 20px;
   }
- 
+
   #success-modal.open { display: flex; }
- 
+
   .success-box {
     background: var(--black-card);
     border: 1px solid rgba(37,211,102,0.3);
@@ -1215,9 +1246,9 @@
     width: 100%;
     animation: modalIn 0.3s ease;
   }
- 
+
   .success-icon { font-size: 72px; margin-bottom: 16px; }
- 
+
   .success-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
@@ -1225,14 +1256,14 @@
     color: #25D366;
     margin-bottom: 8px;
   }
- 
+
   .success-msg {
     color: rgba(255,255,255,0.5);
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 28px;
   }
- 
+
   /* ── WA SECTION IN CONTACT ── */
   .wa-contact-btn {
     display: flex;
@@ -1255,22 +1286,22 @@
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
   }
- 
+
   .wa-contact-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
- 
+
   .wa-contact-btn svg { width: 20px; height: 20px; fill: white; }
 </style>
 </head>
 <body>
- 
+
 <canvas id="sparkle-canvas"></canvas>
- 
+
 <!-- WHATSAPP FLOAT -->
 <a id="wa-float" href="https://wa.me/919422308001?text=Hi%20Aditya!%20I%20want%20to%20order%20from%20Code%20n%20Cook%20%F0%9F%8D%9C" target="_blank">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   WhatsApp Order
 </a>
- 
+
 <!-- CART FAB -->
 <button id="cart-fab" onclick="openCart()">
   🛒 View Cart
@@ -1285,11 +1316,11 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg-circle"></div>
- 
+
   <!-- Logo Badge -->
   <div class="logo-wrap">
     <div class="logo-ring">
@@ -1301,19 +1332,19 @@
       </div>
     </div>
   </div>
- 
+
   <div class="hero-brand">
     <h1>CODE N COOK</h1>
   </div>
- 
+
   <p class="hero-tagline"><span>Coding</span> Cooked Me</p>
   <p class="hero-sub">Serving Happiness in Every Bite &amp; Sip</p>
- 
+
   <div class="hero-cta">
     <a href="#menu" class="btn-gold">Explore Menu</a>
     <a href="#contact" class="btn-outline">Visit Us</a>
   </div>
- 
+
   <div class="scroll-hint">
     <span>Scroll</span>
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1321,20 +1352,20 @@
     </svg>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="about-inner">
     <div class="section-label">Our Story</div>
     <div class="gold-divider"></div>
     <h2 class="section-title">Who We <span>Are</span></h2>
- 
+
     <p class="about-story">
       "I was a <strong>Computer Engineering student</strong>, lost in code, debugging life...
       but <strong>coding cooked me</strong> — so I started <strong>actually cooking</strong>. 
       Now I debug hunger, one plate at a time."
     </p>
- 
+
     <div class="about-tags">
       <span class="tag">100% Vegetarian</span>
       <span class="tag">Made with Love</span>
@@ -1344,20 +1375,20 @@
     </div>
   </div>
 </section>
- 
+
 <!-- MENU -->
 <section id="menu">
   <div class="section-label">What We Serve</div>
   <div class="gold-divider"></div>
   <h2 class="section-title">Our <span>Menu</span></h2>
- 
+
   <div style="text-align:center;">
     <div class="veg-banner">
       <div class="veg-badge" style="width:22px;height:22px;"><div class="dot" style="width:10px;height:10px;"></div></div>
       100% Pure Vegetarian — Always Fresh, Always Tasty
     </div>
   </div>
- 
+
   <div class="menu-grid">
     <!-- Fried Maggi -->
     <div class="menu-card">
@@ -1380,7 +1411,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- Cold Coffee -->
     <div class="menu-card">
       <div class="menu-badge">Must Try ❄️</div>
@@ -1402,16 +1433,16 @@
         </div>
       </div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- GALLERY -->
 <section id="gallery">
   <div class="section-label">Food Gallery</div>
   <div class="gold-divider"></div>
   <h2 class="section-title">Made With <span>Love</span></h2>
- 
+
   <div class="gallery-grid">
     <div class="gallery-card">
       <div class="gallery-placeholder maggi">
@@ -1427,7 +1458,7 @@
         <div class="gallery-label">Fried Maggi — ₹60</div>
       </div>
     </div>
- 
+
         <div class="gallery-card">
       <div class="gallery-placeholder coffee">
         <div class="food-icon">☕</div>
@@ -1440,18 +1471,18 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-label">Get In Touch</div>
   <div class="gold-divider"></div>
   <h2 class="section-title">Find <span>Us</span></h2>
- 
+
   <div class="contact-card shimmer-border">
     <div class="contact-avatar">A</div>
     <div class="contact-name">Aditya Badjate</div>
     <div class="contact-role">Founder & Head Chef — Code n Cook</div>
- 
+
     <div class="contact-info">
       <div class="contact-row">
         <div class="contact-icon">📞</div>
@@ -1471,11 +1502,11 @@
         <div class="contact-icon">✉️</div>
         <div class="contact-text">
           <div class="label">Email</div>
-          <div class="value" style="font-size:13px;">codencook.in@gmail.com</div>
+          <div class="value" style="font-size:13px;letter-spacing:0.3px;">codencook.in@gmail.com</div>
         </div>
       </div>
     </div>
- 
+
     <a href="tel:9422308001" class="btn-gold" style="width:100%;display:block;text-align:center;">📞 Call Now</a>
     <a href="https://wa.me/919422308001?text=Hi%20Aditya!%20I%20want%20to%20place%20an%20order%20from%20Code%20n%20Cook%20%F0%9F%8D%9C" target="_blank" class="wa-contact-btn">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1483,7 +1514,7 @@
     </a>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">Code n Cook</div>
@@ -1494,7 +1525,7 @@
   </div>
   <div class="footer-copyright">© 2025 Code n Cook — All food 100% Vegetarian 🟢</div>
 </footer>
- 
+
 <!-- ORDER / CART MODAL -->
 <div id="order-modal">
   <div class="modal-box">
@@ -1515,7 +1546,7 @@
           <div class="order-total-amt" id="modal-total">₹0</div>
         </div>
       </div>
- 
+
       <!-- Customer Form -->
       <div class="order-form" id="order-form" style="display:none;">
         <div class="form-section-label" style="margin-top:20px;">Your Details</div>
@@ -1533,7 +1564,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="modal-footer" id="modal-footer" style="display:none;">
       <button class="btn-whatsapp-order" onclick="placeOrder()">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1542,17 +1573,22 @@
     </div>
   </div>
 </div>
- 
+
 <!-- SUCCESS MODAL -->
 <div id="success-modal">
   <div class="success-box">
-    <div class="success-icon">✅</div>
-    <div class="success-title">Order Sent!</div>
-    <p class="success-msg">Your order has been sent to Aditya Badjate on WhatsApp.<br>He'll confirm it shortly. Get ready for something delicious! 🍜☕</p>
+    <div class="success-icon">🎟️</div>
+    <div class="success-title">Order Placed!</div>
+    <p class="success-msg">Your order token has been sent to Aditya on WhatsApp.<br>Show this token when collecting your order!</p>
+    <div class="token-box">
+      <div class="token-label">🎟️ Your Token Number</div>
+      <div class="token-number" id="display-token">—</div>
+      <div class="token-hint">Share this token number on WhatsApp.<br>Aditya will call your token when order is ready! ✅</div>
+    </div>
     <button class="btn-gold" style="width:100%;" onclick="closeSuccess()">Back to Menu</button>
   </div>
 </div>
- 
+
 <script>
 // ── CART STATE ──
 const cart = {};
@@ -1561,12 +1597,12 @@ const menuData = {
   coffee: { name: 'Cold Coffee', emoji: '☕', price: 50 }
 };
 const qty = { maggi: 1, coffee: 1 };
- 
+
 function changeQty(id, delta) {
   qty[id] = Math.max(1, (qty[id] || 1) + delta);
   document.getElementById('num-' + id).textContent = qty[id];
 }
- 
+
 function addToCart(id, name, emoji, price) {
   const q = qty[id] || 1;
   if (cart[id]) {
@@ -1576,7 +1612,7 @@ function addToCart(id, name, emoji, price) {
   }
   qty[id] = 1;
   document.getElementById('num-' + id).textContent = 1;
- 
+
   // Show qty control, hide add button
   document.getElementById('qty-' + id).classList.add('active');
   const addBtn = document.getElementById('add-' + id);
@@ -1590,43 +1626,43 @@ function addToCart(id, name, emoji, price) {
     addBtn.style.color = '';
     addBtn.style.border = '';
   }, 1200);
- 
+
   updateCartFAB();
   showToast(`${emoji} Added to cart!`);
 }
- 
+
 function removeFromCart(id) {
   delete cart[id];
   document.getElementById('qty-' + id).classList.remove('active');
   updateCartFAB();
   renderCartModal();
 }
- 
+
 function updateCartFAB() {
   const total = Object.values(cart).reduce((s, i) => s + i.qty, 0);
   const fab = document.getElementById('cart-fab');
   document.getElementById('cart-count').textContent = total;
   fab.classList.toggle('visible', total > 0);
 }
- 
+
 function openCart() {
   renderCartModal();
   document.getElementById('order-modal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
- 
+
 function closeCart() {
   document.getElementById('order-modal').classList.remove('open');
   document.body.style.overflow = '';
 }
- 
+
 function renderCartModal() {
   const list = document.getElementById('cart-items-list');
   const totalRow = document.getElementById('cart-total-row');
   const form = document.getElementById('order-form');
   const footer = document.getElementById('modal-footer');
   const keys = Object.keys(cart);
- 
+
   if (keys.length === 0) {
     list.innerHTML = `<div class="cart-empty"><div class="empty-icon">🍽️</div><div>Your cart is empty.<br>Add something tasty from the menu!</div></div>`;
     totalRow.style.display = 'none';
@@ -1634,7 +1670,7 @@ function renderCartModal() {
     footer.style.display = 'none';
     return;
   }
- 
+
   let html = '';
   let total = 0;
   keys.forEach(id => {
@@ -1662,39 +1698,51 @@ function renderCartModal() {
   form.style.display = 'block';
   footer.style.display = 'flex';
 }
- 
+
+function generateToken() {
+  const now = new Date();
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const rand = Math.floor(Math.random() * 90) + 10;
+  return String((mins + rand) % 900 + 100);
+}
+
 function placeOrder() {
   const name = document.getElementById('cust-name').value.trim();
   const phone = document.getElementById('cust-phone').value.trim();
   const note = document.getElementById('cust-note').value.trim();
- 
+
   if (!name) { alert('Please enter your name 😊'); return; }
   if (!phone || phone.length < 10) { alert('Please enter a valid phone number 📞'); return; }
- 
+
   const keys = Object.keys(cart);
   if (keys.length === 0) { alert('Cart is empty!'); return; }
- 
+
+  const token = generateToken();
+
   let orderLines = '';
   let total = 0;
   keys.forEach(id => {
     const item = cart[id];
     const sub = item.price * item.qty;
     total += sub;
-    orderLines += `${item.emoji} ${item.name} x${item.qty} = ₹${sub}\n`;
+    orderLines += `🔸 ${item.name} x${item.qty} = ₹${sub}\n`;
   });
- 
+
   const msg =
-    `🍜 *New Order — Code n Cook* 🍜\n\n` +
+    `🍜 *New Order — Code n Cook* 🍜\n` +
+    `🎟️ *Token No: ${token}*\n\n` +
     `👤 *Name:* ${name}\n` +
     `📞 *Phone:* ${phone}\n\n` +
     `🛒 *Order Details:*\n${orderLines}\n` +
     `💰 *Total: ₹${total}*\n` +
     (note ? `📝 *Note:* ${note}\n` : '') +
     `\n✅ Please confirm my order. Thank you!`;
- 
+
   const url = 'https://wa.me/919422308001?text=' + encodeURIComponent(msg);
   window.open(url, '_blank');
- 
+
+  document.getElementById('display-token').textContent = token;
+
   closeCart();
   Object.keys(cart).forEach(k => delete cart[k]);
   updateCartFAB();
@@ -1704,11 +1752,11 @@ function placeOrder() {
     document.getElementById('success-modal').classList.add('open');
   }, 400);
 }
- 
+
 function closeSuccess() {
   document.getElementById('success-modal').classList.remove('open');
 }
- 
+
 // ── TOAST ──
 function showToast(msg) {
   const t = document.createElement('div');
@@ -1725,13 +1773,13 @@ function showToast(msg) {
   setTimeout(() => { t.style.opacity = '1'; t.style.transform = 'translateX(-50%) translateY(0)'; }, 10);
   setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(-10px)'; setTimeout(() => t.remove(), 300); }, 2200);
 }
- 
+
 // Close modal on backdrop click
 document.getElementById('order-modal').addEventListener('click', function(e) {
   if (e.target === this) closeCart();
 });
- 
- 
+
+
 // ── WHATSAPP SCROLL SHOW ──
 window.addEventListener('scroll', function() {
   const wa = document.getElementById('wa-float');
@@ -1741,21 +1789,21 @@ window.addEventListener('scroll', function() {
     wa.classList.remove('visible');
   }
 });
- 
+
 // ── GOLDEN SPARKLE CANVAS ──
 const canvas = document.getElementById('sparkle-canvas');
 const ctx = canvas.getContext('2d');
- 
+
 function resize() {
   canvas.width = window.innerWidth;
   canvas.height = document.body.scrollHeight;
 }
 resize();
 window.addEventListener('resize', resize);
- 
+
 const particles = [];
 const COLORS = ['#FFD700', '#FFE84D', '#FFC107', '#FFECB3', '#FFF9C4', '#C9A800'];
- 
+
 class Sparkle {
   constructor() { this.reset(); }
   reset() {
@@ -1772,7 +1820,7 @@ class Sparkle {
     this.rotation = Math.random() * Math.PI * 2;
     this.rotSpeed = (Math.random() - 0.5) * 0.02;
   }
- 
+
   drawStar(x, y, r, spikes, ctx) {
     const step = Math.PI / spikes;
     ctx.beginPath();
@@ -1785,7 +1833,7 @@ class Sparkle {
     }
     ctx.closePath();
   }
- 
+
   update() {
     this.y -= this.speed;
     this.x += this.drift;
@@ -1798,7 +1846,7 @@ class Sparkle {
     }
     if (this.alpha <= 0 || this.y < -10) this.reset();
   }
- 
+
   draw() {
     ctx.save();
     ctx.globalAlpha = this.alpha;
@@ -1816,16 +1864,16 @@ class Sparkle {
     ctx.restore();
   }
 }
- 
+
 for (let i = 0; i < 200; i++) particles.push(new Sparkle());
- 
+
 function animateSparkles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   particles.forEach(p => { p.update(); p.draw(); });
   requestAnimationFrame(animateSparkles);
 }
 animateSparkles();
- 
+
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -1835,13 +1883,5 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
- 
-document.querySelectorAll('.menu-card, .gallery-card, .about-story, .contact-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(30px)';
-  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-  observer.observe(el);
-});
-</script>
-</body>
-</html>
+
+document.querySelectorAll('.menu-card, .gallery-card, .a
